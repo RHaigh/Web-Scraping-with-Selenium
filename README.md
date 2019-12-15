@@ -31,8 +31,8 @@ instructions at: https://selenium-python.readthedocs.io/installation.html
 
 Once you have successfully aligned and installed the correct versions and dependencies, you are ready to go.
 
-Many traditional web-scraping methods rely on feeding in a particular url. For example, a beautifulsup or scrapy based tool to 
-collect info on available phones would be fed the url: "https://www.amazon.co.uk/s?k=phones&ref=nb_sb_noss_1"
+Many traditional web-scraping methods rely on feeding in a particular url. For example, a beautifulsoup or scrapy based tool to collect info on available phones from Amazon would be fed the url: "https://www.amazon.co.uk/sk=phones&ref=nb_sb_noss_1".
+We see our desired search criteria is present within the url and can be given as a clear destination. 
 
 With this, you could then instruct your scraper to collect the html on this newly rendered search results page. 
 
