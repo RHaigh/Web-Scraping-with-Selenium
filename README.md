@@ -14,7 +14,7 @@ Software Requirements: Selenium Webdriver
 The most difficult and important task is initially aligning your browser, driver and selenium versions. Any mismatch here
 will result in failure to execute. 
 
-Note that selenium webdriver allows you to use the following broswer that must be matched with a specific webdriver:
+Note that selenium allows you to use the following browser that must be matched with a specific webdriver:
 - Chrome and Chromedriver
 - Firefox and GeckoDriver
 - Internet Explorer and IEDriver
