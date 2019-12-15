@@ -31,10 +31,7 @@ instructions at: https://selenium-python.readthedocs.io/installation.html
 
 Once you have successfully aligned and installed the correct versions and dependencies, you are ready to go.
 
-Many traditional web-scraping methods rely on feeding in a particular url. For example, a beautifulsoup or scrapy based tool to collect info on available phones from Amazon would be fed the url: "https://www.amazon.co.uk/sk=phones&ref=nb_sb_noss_1".
-We see our desired search criteria is present within the url and can be given as a clear destination. 
-
-With this, you could then instruct your scraper to collect the html on this newly rendered search results page. 
+Many traditional web-scraping methods rely on feeding in a particular url. For example, a beautifulsoup or scrapy based tool to collect info would be something like: "https://www.amazon.co.uk/{item to search for}". We typically see our desired search criteria is present within the url and can be given as a clear destination. With this, you could then instruct your scraper to collect the html on this newly rendered search results page. 
 
 BUT some websites are dynamic and built using advanced javascript. These websites have a static url while the html rendering 
 is based on user input. How do you program a web-scraper to enter set data for you then collect the results on such a page? 
@@ -42,8 +39,6 @@ is based on user input. How do you program a web-scraper to enter set data for y
 With selenium WebDriver. 
 
 Selenium is a tool meant for testing web applications. You program it to execute a wide range of commands on your webpage to
-test for vulnerabilities that may be exploited through ignorance or malice. We can use this to enter in paticular values into 
-search bars, press buttons and enter commands, then pass our session to BeautifulSoup to scrape the resulting dynamic html. 
-Finally, we pass the results to the csv library and write to csv in our project folder. 
+test for vulnerabilities that may be exploited through ignorance or malice. We can use this to enter in paticular values into search bars, press buttons and enter commands, then pass our session to BeautifulSoup to scrape the resulting dynamic html. Finally, we pass the results to the csv library and write to csv in our project folder. 
 
-In this tutorial, we have used the allstarcard fuel price comparison page. 
+In this tutorial, we have used the allstarcard fuel price comparison page and collect data regarding different fuel prices over a wide range of rural Scottish authorities. 
