@@ -11,7 +11,7 @@ Environment: PyCharm Community Ed 2019.3
 
 Software Requirements: Selenium Webdriver 
 
-The most difficult and important task is initially aligning your browser, driver and selenium versions as any mis-match here
+The most difficult and important task is initially aligning your browser, driver and selenium versions. Any mismatch here
 will result in failure to execute. 
 
 Note that selenium webdriver allows you to use the following broswer that must be matched with a specific webdriver:
