@@ -4,14 +4,14 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 
-# Match chrome 79 to chromedriver 79.0.3495
+# AS my chosen browser is chrome 79, I must match this to chromedriver 79.0.3495
 
 # Enter in our chosen list of locations to search
 location_list = ("Dunrossness", "Orkney", "Lochbroom", "Aberfeldy", "Ford", "Kinnaird",
                    "Springside", "Moffat", "Linton", "Ibrox")
 
 # Define direct path to the chromedriver.exe file
-driver = webdriver.Chrome(executable_path=r"/Users/richardhaigh/Downloads/chromedriver")
+driver = webdriver.Chrome(executable_path=r"/Users/Path/chromedriver")
 
 for i in location_list:
     filename = (i + "_fuel_prices.csv")
@@ -22,12 +22,12 @@ for i in location_list:
     # Open up developer mode in chrome to identify the html tag required. Here we are looking for the text entry box
     element = driver.find_element_by_css_selector("#postcode")
     element.send_keys(i)
-    # Followed by the search button. We will find both by their css tag. We could also use class or id find functions
+    # Followed by the search button. We will find both by their css tag. We could also use class or id finder functions
     element = driver.find_element_by_css_selector("#find-my-nearest-station > button")
     element.send_keys(Keys.RETURN)
     time.sleep(5)
 
-    # Hand over Selenium results to BS
+    # Hand over Selenium results to BS which is far better suited to hunting through our scraped results
     soup = BeautifulSoup(driver.page_source, 'lxml')
     # Identify results table
     table = soup.find_all('table')[2]
