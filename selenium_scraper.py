@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 
-# AS my chosen browser is chrome 79, I must match this to chromedriver 79.0.3495
+# As my chosen browser is chrome 79, I must match this to chromedriver 79.0.3495
 
 # Enter in our chosen list of locations to search
 location_list = ("Dunrossness", "Orkney", "Lochbroom", "Aberfeldy", "Ford", "Kinnaird",
