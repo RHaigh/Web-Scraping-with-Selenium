@@ -30,14 +30,18 @@ The driver version MUST match the version of the browser. You may then install S
 
 Once you have successfully aligned and installed the correct versions and dependencies, you are ready to go.
 
-Many traditional web-scraping methods rely on feeding in a particular url. For example, a beautifulsoup or scrapy based tool to collect info would be something like: "https://www.amazon.co.uk/{item_to_search_for}". We typically see our desired search criteria is present within the url and can be given as a clear destination. With this, you could then instruct your scraper to collect the html on this newly rendered search results page. 
+Many traditional web-scraping methods rely on feeding in a particular url. For example, a beautifulsoup or scrapy based tool to collect info would be given a url something like: "https://www.amazon.co.uk/{item_to_search_for}". We typically see our desired search criteria is present within the url and can be given as a clear destination. With this, you could then instruct your scraper to collect the html on this newly rendered search results page. 
 
 BUT some websites are dynamic and built using advanced javascript. These websites have a static url while the html rendering 
-is based on user input. How do you program a web-scraper to enter set data for you then collect the results on such a page? 
+is programmed to dynamincally render based on user input. How do you program a web-scraper to enter set data for you then collect the results on such a page? 
 
 With selenium WebDriver. 
 
 Selenium is a tool meant for testing web applications. You program it to execute a wide range of commands on your webpage to
 test for vulnerabilities that may be exploited through ignorance or malice. We can use this to enter in paticular values into search bars, press buttons and enter commands, then pass our session to BeautifulSoup to scrape the resulting dynamic html. Finally, we pass the results to the csv library and write to csv in our project folder. 
 
-In this tutorial, we have used the allstarcard fuel price comparison page and collect data regarding different fuel prices over a wide range of rural Scottish authorities. Follow the guide to see how to enter a range of commands but note that this code will not work if the html of your desired page is different (as it very likely is). Use this as a tutorial on how to find the html tags you require. 
+In this tutorial, we have used the allstarcard fuel price comparison page and collect data regarding different fuel prices over a wide range of rural Scottish authorities.
+
+Follow the guide to see how to enter a range of commands but note that this code will not work if the html of your desired page is different (as it very likely is). Use this as a tutorial on how to find the html tags you require. Many websites actively change their html on a regular basis to hinder web scraping activity that lets users access their websites without viewing ads. At the time of upload, this code is correct and functioning but if during your testing, it fails, a likely culprit will be a change in the CSS of the chosen input sections we are hunting for. Make sure to check in chrome developer mode that the style and class id are unchanged. 
+
+Finally, please use all scraping tools responsibly. 
