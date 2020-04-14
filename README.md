@@ -1,7 +1,7 @@
 # Dynamic Webscraper Using Selenium WebDriver & BeautifulSoup
 A guide for analysts who require data from dynamic web pages where traditional url webscraping cannot be used.  
 
-Author: Richard Haigh
+Author: Richard Haigh SG with help from Alex Betts of DEFRA
 
 Date of Intial Upload: 15/12/2019
 
@@ -11,7 +11,7 @@ Written: Python 3.7
 
 Environment: PyCharm Community Ed 2019.3  
 
-Packages: 
+Packages: time, csv, pandas v0.25.3, beautifulsoup4 v4.8.1, selenium v3.141.0
 
 # R Version
 
@@ -20,6 +20,8 @@ Written: R 3.6.3
 Environment: RStudio 1.2.1335
 
 Packages: RSelenium v1.7.7, stringr v1.4.0, purrr v0.3.3, readr v1.3.1
+
+# Software Alignment
 
 Software Requirements: Selenium Webdriver 
 
