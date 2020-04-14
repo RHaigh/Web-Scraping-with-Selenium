@@ -5,9 +5,21 @@ Author: Richard Haigh
 
 Date of Intial Upload: 15/12/2019
 
-Written - Python 2.7.16 (upgrade to 3)
+# Python Version
 
-Environment: PyCharm Community Ed 2019.3
+Written: Python 3.7 
+
+Environment: PyCharm Community Ed 2019.3  
+
+Packages: 
+
+# R Version
+
+Written: R 3.6.3
+
+Environment: RStudio 1.2.1335
+
+Packages: RSelenium v1.7.7, stringr v1.4.0, purrr v0.3.3, readr v1.3.1
 
 Software Requirements: Selenium Webdriver 
 
@@ -40,7 +52,9 @@ With selenium WebDriver.
 Selenium is a tool meant for testing web applications. You program it to execute a wide range of commands on your webpage to
 test for vulnerabilities that may be exploited through ignorance or malice. We can use this to enter in paticular values into search bars, press buttons and enter commands, then pass our session to BeautifulSoup to scrape the resulting dynamic html. Finally, we pass the results to the csv library and write to csv in our project folder. 
 
-In this tutorial, we have used the allstarcard fuel price comparison page and collect data regarding different fuel prices over a wide range of rural Scottish authorities.
+In this tutorial, we have used selenium webdriver to collect data regarding grocery prices from a major supermarket. 
+
+There is an R and Python version. 
 
 Follow the guide to see how to enter a range of commands but note that this code will not work if the html of your desired page is different (as it very likely is). Use this as a tutorial on how to find the html tags you require. Many websites actively change their html on a regular basis to hinder web scraping activity that lets users access their websites without viewing ads. At the time of upload, this code is correct and functioning but if during your testing, it fails, a likely culprit will be a change in the CSS of the chosen input sections we are hunting for. Make sure to check in chrome developer mode that the style and class id are unchanged. 
 
