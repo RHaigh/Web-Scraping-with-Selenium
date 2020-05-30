@@ -54,7 +54,7 @@ With selenium WebDriver.
 Selenium is a tool meant for testing web applications. You program it to execute a wide range of commands on your webpage to
 test for vulnerabilities that may be exploited through ignorance or malice. We can use this to enter in paticular values into search bars, press buttons and enter commands, then pass our session to BeautifulSoup to scrape the resulting dynamic html. Finally, we pass the results to the csv library and write to csv in our project folder. 
 
-In this tutorial, we have used selenium webdriver to collect data regarding grocery prices from a major supermarket. 
+In this tutorial, we have used selenium webdriver to collect data regarding fuel prices from a major price comparison website. 
 
 There is an R and Python version. 
 
