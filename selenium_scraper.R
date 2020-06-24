@@ -44,7 +44,7 @@ Sys.sleep(3)
 Name<-remDr$findElement(using = 'css selector',  "#Name")
 Name$sendKeysToElement(list('MyName'))
 
-# Generate a random email address using a random string gnerator
+# Generate a random email address using a random string generator
 random_string_generator <- function(n = 5000) {
   a <- do.call(paste0, replicate(5, sample(LETTERS, n, TRUE), FALSE))
   paste0(a, sprintf("%04d", sample(9999, n, TRUE)), sample(LETTERS, n, TRUE))
