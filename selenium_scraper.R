@@ -24,9 +24,9 @@ driver<- rsDriver(
 # Note if you receive a selenium error at this point, you most likely have to update your firefox gecko driver
 # Run binman::list_versions("geckodriver") to see available drivers
 # Use following code to change RSelenium default version used to compatible version
-# driver<- rsDriver(browser=c("firefox"), geckover="8.0.3904.70") or simply put 'latest' if your drivers are all up to date
+# driver <- rsDriver(browser=c("firefox"), geckover="8.0.3904.70") or simply put 'latest' if your drivers are all up to date
 
-# This is a headless version but, if you would ike to see what your coe is doing, you can use:
+# This is a headless version but, if you would like to see what your code is doing, you can use:
 driver<- rsDriver(
   browser = "firefox", geckover = "latest"
 )
