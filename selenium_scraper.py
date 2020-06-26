@@ -52,7 +52,7 @@ element = driver.find_element_by_css_selector("#NearbySitesLocation")
 element.send_keys('Edinburgh')
 element.send_keys(Keys.RETURN)
 
-# A new html table is rendered with our results. We can use BeautifulSoup to iterate over this table and collate a dataframe
+# A new html table is rendered with our results. We can use BeautifulSoup to find all code with the table class
 soup = BeautifulSoup(driver.page_source, 'lxml')
 table = soup.find_all('table')[2] # There are several tables within the html so we must grab the correct one
 
