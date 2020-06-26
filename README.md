@@ -11,7 +11,7 @@ Written: Python 3.7
 
 Environment: PyCharm Community Ed 2019.3  
 
-Packages: time, csv, pandas v0.25.3, beautifulsoup4 v4.8.1, selenium v3.141.0
+Packages: time, random, string, csv, pandas v0.25.3, beautifulsoup4 v4.8.1, selenium v3.141.0
 
 # R Version
 
