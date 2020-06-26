@@ -77,7 +77,7 @@ for i in location_list:
     driver.get("https://www.allstarcard.co.uk/tools/uk-fuel-prices/")
 
     element = driver.find_element_by_css_selector("#NearbySitesLocation")
-    element.send_keys(i)
+    element.send_keys(slow_typing(i))
     element.send_keys(Keys.RETURN)
 
     soup = BeautifulSoup(driver.page_source, 'lxml')
