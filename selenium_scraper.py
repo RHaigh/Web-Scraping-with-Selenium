@@ -16,7 +16,7 @@ driver = webdriver.Chrome(executable_path=r"/Path/to/chromedriver")
 #  We can also initialise browser in headless mode to speed up the process and save on memory
 chrome_options = Options()
 chrome_options.add_argument("--headless")
-driver = webdriver.Chrome(options=chrome_options, executable_path=r"/Users/richardhaigh/Downloads/chromedriver")
+driver = webdriver.Chrome(options=chrome_options, executable_path=r"/Users/path_to/chromedriver")
 
 # Custom function we will use to imitate slow typing and fool anti-bot software
 def slow_typing(element, text):
