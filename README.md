@@ -46,8 +46,7 @@ Once you have successfully aligned and installed the correct versions and depend
 
 Many traditional web-scraping methods rely on feeding in a particular url. For example, a beautifulsoup or scrapy based tool to collect info would be given a url something like: "https://www.amazon.co.uk/{item_to_search_for}". We typically see our desired search criteria is present within the url and can be given as a clear destination. With this, you could then instruct your scraper to collect the html on this newly rendered search results page. 
 
-BUT some websites are dynamic and built using advanced javascript. These websites have a static url while the html  
-is programmed to dynamincally render based on user input. How do you program a web-scraper to enter set data for you then collect the results on such a page? 
+BUT some websites are dynamic and built using advanced javascript. These websites have a static url while the html is programmed to dynamincally render based on user input. How do you program a web-scraper to enter set data for you then collect the results on such a page? 
 
 With selenium WebDriver. 
 
